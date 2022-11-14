@@ -31,11 +31,11 @@
         android:id="@+id/textPrimeiroOperador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="128dp"
         android:text="Operador"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPrimeiroNumero" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/spinnerDificuldade"
@@ -57,7 +57,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textSegundoNumero" />
+        app:layout_constraintTop_toBottomOf="@+id/textPrimeiroOperador" />
 
     <EditText
         android:id="@+id/textTerceiroNumero"
@@ -74,21 +74,21 @@
         android:id="@+id/textPrimeiroNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginEnd="32dp"
         android:text="1º Número"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/textPrimeiroOperador"
+        app:layout_constraintEnd_toStartOf="@+id/textPrimeiroOperador"
+        app:layout_constraintTop_toTopOf="@+id/textPrimeiroOperador" />
 
     <TextView
         android:id="@+id/textSegundoNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
         android:text="2º Número"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPrimeiroOperador" />
+        app:layout_constraintBottom_toBottomOf="@+id/textPrimeiroOperador"
+        app:layout_constraintStart_toEndOf="@+id/textPrimeiroOperador"
+        app:layout_constraintTop_toTopOf="@+id/textPrimeiroOperador"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
