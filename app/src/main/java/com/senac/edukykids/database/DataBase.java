@@ -13,7 +13,7 @@ public class DataBase extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "eduky.db";
     private static final int VERSION =1;
-    private static final String SQL_URL = "d"
+    private static final String SQL_URL = "d";
 
     private static final String SQL_CREATE =
             "create table imagens ( " +
@@ -32,7 +32,7 @@ public class DataBase extends SQLiteOpenHelper {
 
         ContentValues valores = new ContentValues();
 
-        for (File arquivo : )
+        //for (File arquivo : )
     }
 
     @Override

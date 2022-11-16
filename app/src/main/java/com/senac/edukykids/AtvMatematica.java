@@ -72,18 +72,18 @@ public class AtvMatematica extends AppCompatActivity implements View.OnClickList
                 String terceiroNumero = df.format(Double.valueOf(edtTerceiroNumero.getText().toString()));
                 String resultadoReal = df.format(this.resultado);
                 if (terceiroNumero.equals(resultadoReal)) {
-                    Toast.makeText(this, "Resposta CORRETA!", Toast.LENGTH_LONG);
+                    Toast.makeText(this, "Resposta CORRETA!", Toast.LENGTH_LONG).show();
                     try {
                         inicializarDesafio();
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
                 } else {
-                    Toast.makeText(this, "Resposta CORRETA!", Toast.LENGTH_LONG);
+                    Toast.makeText(this, "Resposta INCORRETA!", Toast.LENGTH_LONG).show();
                 }
                 break;
             default:
-                Toast.makeText(this, "Opção Inválida!", Toast.LENGTH_LONG);
+                Toast.makeText(this, "Opção Inválida!", Toast.LENGTH_LONG).show();
         }
     }
 
