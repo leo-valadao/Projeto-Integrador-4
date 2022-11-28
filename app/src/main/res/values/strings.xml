@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Eduky Kids</string>
+    <string name="dificuldade">Dificuldade:</string>
     <string name="jogo_matematica">Jogo da Matemática</string>
     <string name="tentar_calculo">Tentar Calcular</string>
+    <string name="pontuacao">Pontuação:</string>
 </resources>
